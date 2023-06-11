@@ -1,20 +1,24 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+import { Card, ListGroup } from "react-bootstrap";
 
-const ProjectCards = (props)=> {
+const ProjectCards = (props) => {
   return (
     <Card className="project-card-view">
-      {/* <Card.Img variant="top" src={props.imgPath} alt="card-img" /> */}
       <Card.Body>
-        <Card.Title style={{fontWeight: "bold"}}>{props.title}</Card.Title>
+        <Card.Title style={{ fontWeight: "bold" }}>{props.title}</Card.Title>
         <Card.Text className="purple">Technology: {props.technologyUsed}</Card.Text>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        {/* <Button variant="primary" href={props.link} target="_blank"className="download-button">
-          <BiLinkExternal /> &nbsp;
-          {props.isBlog ? "View Blog" : "View Project"}
-        </Button> */}
+        <Card.Text className="purple" style={{ textAlign: "left" }}>Responsibilities:</Card.Text>
+        <ListGroup variant="flush" style={{ alignItems: "flex-start" }}>
+          {props.responsibilities.map(item => {
+            return (<>
+              <ListGroup.Item>{item}</ListGroup.Item>
+            </>
+            );
+          })}
+        </ListGroup>
       </Card.Body>
     </Card>
   );
