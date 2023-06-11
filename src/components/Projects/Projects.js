@@ -15,7 +15,7 @@ const Projects = () => {
         </p>
         <Row style={{ justifyContent: "left", paddingBottom: "10px" }}>
           {PROJECTS.map((project, index) => (
-            <Col md={12} className="project-card" key={index}>
+            <Col md={6} className="project-card" key={index}>
               <ProjectCard
                 imgPath={project.image}
                 technologyUsed={project.technologyUsed}
