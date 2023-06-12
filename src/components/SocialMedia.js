@@ -42,8 +42,7 @@ const SocialMedia = () => {
       </li>
       <li className="social-icons">
         <a
-          href="+6581503134"
-          target="_blank"
+          href="tel:+6581503134"
           rel="noreferrer"
           className="icon-colour home-social-icons"
         >

@@ -26,7 +26,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/portfolio.me">
       {load ? (
         <Preloader load={load} />
       ) : (
