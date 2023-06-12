@@ -19,9 +19,8 @@ const ProjectCards = (props) => {
         <Card.Text className="purple" style={{ textAlign: "left" }}>Responsibilities:</Card.Text>
         <ListGroup variant="flush" style={{ alignItems: "flex-start" }}>
           {props.responsibilities.map(item => {
-            return (<>
+            return (
               <ListGroup.Item>{item}</ListGroup.Item>
-            </>
             );
           })}
         </ListGroup>

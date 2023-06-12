@@ -131,6 +131,57 @@ export const PROJECTS = [
   },
 ];
 
+export const EDUCATION = [
+  {
+    name: "B.Sc. in Computer Science (full-time)",
+    period: "(Feb 2013 - Apr 2016)",
+    country_institute: "University of Colombo, Sri Lanka"
+  },
+  {
+    name: "Advanced Business Solution Developer (certificate)",
+    period: "(Nov 2011 - Oct 2012)",
+    country_institute: "IJSE, Sri Lanka"
+  },
+  {
+    name: "GCE Advance Level (Physical science)",
+    period: "(May 2008 - Aug 2010)",
+    country_institute: "Dharmasoka College, Sri Lanka"
+  }
+];
+
+export const WORK = [
+  {
+    companyName: "Cognizant Technology Solutions",
+    role: "Senior Software Engineer",
+    period: "Nov 2022 - May 2023",
+    location: "Singapore"
+  },
+  {
+    companyName: "BISTEC Global Services (Pvt) Ltd",
+    role: "Associate Tech Lead",
+    period: "Feb 2022- Nov 2022",
+    location: "Colombo, Sri Lanka"
+  },
+  {
+    companyName: "Softcodeit Solutions (Pvt) Ltd",
+    role: "Senior Software Engineer",
+    period: "March 2021-Feb 2022",
+    location: "Colombo, Sri Lanka"
+  },
+  {
+    companyName: "SDB Bank (UPay)",
+    role: "Software Engineer / Senior Software Engineer",
+    period: "Apr 2017-Mar 2021",
+    location: "Colombo, Sri Lanka"
+  },
+  {
+    companyName: "Crowderia (Pvt) (Ltd, Colombo",
+    role: "Associate Software Engineer / Software Engineer",
+    period: "Aug 2015-Apr 2017",
+    location: "Colombo, Sri Lanka"
+  },
+];
+
 export const SKILLS = [
   { name: "ReactJs", initialRating: 4 },
   { name: "Node JS", initialRating: 4 },

@@ -1,33 +1,33 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { PROJECTS } from "../../Constants";
+import { EDUCATION, WORK } from "../../Constants";
 import QualificationCards from "./QualificationCards";
+import WorkCards from "./WorkCards";
 
 const Qualification = () => {
   return (
     <Container fluid className="project-section">
-      <Container>
+      {/* <Container> */}
         <h1 className="project-heading">
-          My <strong className="purple">Educational & Professional </strong>Qualifications
+          My <strong className="purple">Educational </strong>Qualifications & <strong className="purple">Work</strong> Experience
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {PROJECTS.map((project, index) => (
-            <Col md={6} className="project-card" key={index}>
+         
+            <Col md={6} className="project-card" >
               <QualificationCards
-                imgPath={project.image}
-                technologyUsed={project.technologyUsed}
-                isBlog={false}
-                title={project.name}
-                description={project.description}
-                link={project.url}
+                qualifications={EDUCATION}
               />
             </Col>
-          ))}
+            <Col md={6} className="project-card" >
+              <WorkCards
+                qualifications={WORK}
+              />
+            </Col>
         </Row>
-      </Container>
+      {/* </Container> */}
     </Container>
   );
 }

@@ -37,7 +37,7 @@ const NavBar = () => {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="https://www.linkedin.com/in/kasun-lakmal-abaywardana/" target="_blank">
+        <Navbar.Brand href="/">
           <MdDeveloperMode style={{ marginBottom: "2px" }} /> @kasun
         </Navbar.Brand>
         <Navbar.Toggle
