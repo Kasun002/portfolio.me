@@ -4,7 +4,7 @@ import myImg from "../../Assets/kasun.jpg";
 import SocialMedia from "../SocialMedia";
 import TypeWriter from "./TypeWriter";
 
-const Home = ()=> {
+const Home = () => {
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -24,7 +24,7 @@ const Home = ()=> {
               </h1>
 
               <p className="heading-description blockquote">
-              With over 7 years of experience, I am truly passionate about utilizing JavaScript and my expertise in software development to create remarkable user experiences. My skills lie in developing web applications, utilizing the latest front-end, back-end, and hybrid mobile technologies, as well as serverless architectures.
+                With over 7 years of experience, I am truly passionate about utilizing JavaScript for web development and my expertise in software development to create remarkable user experiences. My skills lie in developing web applications, utilizing the latest front-end, back-end, and hybrid mobile technologies, as well as serverless architectures.
               </p>
 
               <div className="heading-type">

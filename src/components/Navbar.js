@@ -37,7 +37,7 @@ const NavBar = () => {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/portfolio.me">
           <MdDeveloperMode style={{ marginBottom: "2px" }} /> @kasun
         </Navbar.Brand>
         <Navbar.Toggle
