@@ -32,8 +32,7 @@ const SocialMedia = () => {
       </li>
       <li className="social-icons">
         <a
-          href="abaywardanakasun@gmail.com"
-          target="_blank"
+          href="email:abaywardanakasun@gmail.com"
           rel="noreferrer"
           className="icon-colour home-social-icons"
         >
