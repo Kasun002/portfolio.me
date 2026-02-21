@@ -32,18 +32,7 @@
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
-}
-
-.list-group-flush>.list-group-item {
-  border-width: 0 !important;
-  text-align: left;
-}
-
-.project__title {
-  font-weight: bold !important;
-  text-align: left;
 }

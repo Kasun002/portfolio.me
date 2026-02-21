@@ -2,20 +2,21 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import logo from "../Assets/logo.png";
+import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { ImBlog } from "react-icons/im";
+import { CgGitFork } from "react-icons/cg";
+import { FaMediumM } from "react-icons/fa";
 import {
+  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  AiOutlineOrderedList
 } from "react-icons/ai";
-
-import { MdDeveloperMode } from "react-icons/md";
 
 import { CgFileDocument } from "react-icons/cg";
 
-const NavBar = () => {
+function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -37,8 +38,8 @@ const NavBar = () => {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/portfolio.me">
-          <MdDeveloperMode style={{ marginBottom: "2px" }} /> @kasun
+        <Navbar.Brand href="/" className="d-flex">
+          <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -51,7 +52,7 @@ const NavBar = () => {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto" defaultActiveKey="#home">
+          <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
@@ -67,15 +68,7 @@ const NavBar = () => {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/qualification"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineOrderedList style={{ marginBottom: "2px" }} /> Qualifications
-              </Nav.Link>
-            </Nav.Item>
+
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -105,8 +98,19 @@ const NavBar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <FaMediumM style={{ marginBottom: "2px" }} /> Medium
               </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item className="fork-btn">
+              <Button
+                href="https://github.com/Kasun002/portfolio.me"
+                target="_blank"
+                className="fork-btn-inner"
+              >
+                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                <AiFillStar style={{ fontSize: "1.1em" }} />
+              </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

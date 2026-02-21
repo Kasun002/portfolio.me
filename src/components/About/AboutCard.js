@@ -2,35 +2,49 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
 
-const AboutCard = ()=> {
+function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Kasun Abaywardana </span> originally
-            from <span className="purple"> Colombo, Sri Lanka</span>, currently based on <span className="purple">Singapore.</span>
+            Hi everyone! I'm <span className="purple">Kasun Abaywardana</span>{" "}
+            from <span className="purple">Colombo, Sri Lanka</span>, currently
+            based in <span className="purple">Singapore</span>.
             <br />
-            I am an enthusiastic Software Engineer who brings ideas to life through the art of coding.
+            I'm working as a{" "}
+            <span className="purple">Software Consultant at IBM</span>, deployed
+            at the{" "}
+            <span className="purple">
+              Monetary Authority of Singapore (MAS)
+            </span>
+            .
             <br />
-            I am a motivated developer with experience in creating custom web applications using ReactJS, Angular, Cordova, HTML, CSS, and SASS for frontend and mobile development. For backend, I am proficient in Node.js, Next.js, and MongoDB. Additionally, I have expertise in utilizing AWS and Firebase for serverless development.
+            I hold a{" "}
+            <span className="purple">B.Sc. in Computer Science</span> from the{" "}
+            <span className="purple">University of Colombo, Sri Lanka</span>.
             <br />
-            Apart from coding, some other activities that I love to do!
+            <br />
+            Outside of coding, I love engaging in activities that keep me
+            inspired and growing:
           </p>
+
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Cooking
+              <ImPointRight /> Writing Tech Blogs on Medium ✍️
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Exploring AI & LLM innovations 🤖
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Play badminton
+              <ImPointRight /> Traveling and Exploring New Places 🌏
             </li>
           </ul>
+
+          <p style={{ color: "rgb(155 126 172)" }}>
+            "Build systems that scale, ship features that matter!"{" "}
+          </p>
+          <footer className="blockquote-footer">Kasun</footer>
         </blockquote>
       </Card.Body>
     </Card>

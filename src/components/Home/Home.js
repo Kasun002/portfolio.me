@@ -1,16 +1,22 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/kasun.jpg";
-import SocialMedia from "../SocialMedia";
-import TypeWriter from "./TypeWriter";
+import homeLogo from "../../Assets/home-main.svg";
+import Particle from "../Particle";
+import Home2 from "./Home2";
+import Type from "./Type";
+import {
+  AiFillGithub,
+} from "react-icons/ai";
+import { FaLinkedinIn, FaMediumM } from "react-icons/fa";
 
-const Home = () => {
+function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
+        <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={6} className="home-header">
+            <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -20,40 +26,68 @@ const Home = () => {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> Kasun Abaywardana</strong>
+                <strong className="main-name"> KASUN ABAYWARDANA</strong>
               </h1>
 
-              <p className="heading-description blockquote">
-                With over 7 years of experience, I am truly passionate about utilizing JavaScript for web development and my expertise in software development to create remarkable user experiences. My skills lie in developing web applications, utilizing the latest front-end, back-end, and hybrid mobile technologies, as well as serverless architectures.
-              </p>
-
-              <div className="heading-type">
-                <TypeWriter />
+              <div style={{ padding: 50, textAlign: "left" }}>
+                <Type />
               </div>
             </Col>
 
-            <Col md={5}>
-              <img src={myImg} className="profile-pic" alt="avatar" />
+            <Col md={5} style={{ paddingBottom: 20 }}>
+              <img
+                src={homeLogo}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "450px" }}
+              />
             </Col>
           </Row>
         </Container>
       </Container>
-      <Container fluid className="home-about-section" id="about">
-        <Container>
-          <Row>
-            <Col md={12} className="home-about-social">
-              <h1>Get in Touch</h1>
-              <p>
-                {" "}
-                Whether you want to get in touch, or talk about a project
-                collaboration.
-                <br />
-                <strong>Feel free to connect with me</strong>
-              </p>
-              <SocialMedia />
-            </Col>
-          </Row>
-        </Container>
+      <Home2 />
+
+      <Container>
+        <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
+          <Col md={12} className="home-about-social">
+            <h1>Find Me On</h1>
+            <p>
+              Feel free to <span className="purple">connect </span>with me
+            </p>
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://github.com/Kasun002"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/kasun-lakmal-abaywardana/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://medium.com/@abaywardanakasun"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <FaMediumM />
+                </a>
+              </li>
+            </ul>
+          </Col>
+        </Row>
       </Container>
     </section>
   );
