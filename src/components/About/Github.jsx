@@ -18,7 +18,8 @@ function Github() {
         username="Kasun002"
         blockSize={30}
         blockMargin={10}
-        color="#c084f5"
+        theme={{ dark: ["#161B22", "#c084f5"] }}
+        colorScheme="dark"
         fontSize={20}
       />
     </Row>
